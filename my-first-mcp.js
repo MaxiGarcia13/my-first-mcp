@@ -12,14 +12,14 @@ server.registerTool(
   {
     title: "Addition Tool",
     description: "Adds two numbers together",
-    inputSchema: z.object({
+    inputSchema: {
       a: z.number(),
       b: z.number(),
-    }),
+    },
   },
-  async (a, b) => {
+  async (params) => {
     return {
-      content: [{ type: "text", text: `${a} + ${b} = ${a + b}` }],
+      content: [{ type: "text", text: String(params.a + params.b) }],
     };
   },
 );
