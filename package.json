@@ -5,7 +5,9 @@
   "description": "My first MCP",
   "main": "index.js",
   "scripts": {
-    "myFirstMcp": "node my-first-mcp.js"
+    "myFirstMcp": "node my-first-mcp.js",
+    "myFirstMcp:list": "echo '{\"jsonrpc\": \"2.0\", \"id\": 1, \"method\": \"tools/list\", \"params\": {\"name\": \"add\", \"arguments\": {}}}' | node my-first-mcp.js | jq",
+    "myFirstMcp:call": "echo '{\"jsonrpc\": \"2.0\", \"id\": 1, \"method\": \"tools/call\", \"params\": {\"name\": \"add\", \"arguments\": {\"a\": 5, \"b\": 3}}}' | node my-first-mcp.js | jq"
   },
   "repository": {
     "type": "git",
