@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/MaxiGarcia13/my-first-mcp/issues"
   },
-  "homepage": "https://github.com/MaxiGarcia13/my-first-mcp#readme"
+  "homepage": "https://github.com/MaxiGarcia13/my-first-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.16"
+  }
 }
